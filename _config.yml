@@ -2,10 +2,11 @@
 menu:
   主页: /
   目录: /archives
+  分类: /categories
   标签: /tags
-  旅行: /tags/旅行/
+  机器学习: /tags/ML/
   摄影: http://shenyu-vip.lofter.com
-  关于我: /2019/about
+  关于我: /about
 
 # 网站图标和侧边栏logo
 favicon: /favicon.ico
@@ -84,9 +85,9 @@ gitalk:
   admin: # GitHub ID
 
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
-github: 
+github: false
   # (关闭请设置为false)
-  url: https://github.com/Shen-Yu/hexo-theme-ayer
+  # url: https://github.com/Shen-Yu/hexo-theme-ayer
 
 # fancybox(仅用于相册展示，若需要可配置albums)
 fancybox: true
@@ -106,10 +107,10 @@ google_analytics: ''
 baidu_analytics: ''
 
 # 数学公式
-mathjax: false
+mathjax: true
 
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2015
+since: 2020
 
 #是否显示页脚信息(建议保留，有助于本主题的推广)
 pageFooter: true
