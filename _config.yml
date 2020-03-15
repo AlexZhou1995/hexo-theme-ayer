@@ -4,8 +4,9 @@ menu:
   归档: /archives
   分类: /categories
   标签: /tags
-  机器学习: /tags/ML/
-  摄影: http://shenyu-vip.lofter.com
+  ML: /tags/ML/
+  随笔: /tags/随笔/
+  # 摄影: http://shenyu-vip.lofter.com
   关于我: /about
 
 # 网站图标和侧边栏logo
