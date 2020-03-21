@@ -14,8 +14,8 @@
   </a>
   <br>
   <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
-    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.6-blue.svg">
-  </a>
+    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.9-blue.svg">
+  </a> 
  <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-orange.svg">
   <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener noreferrer">
     <img alt="hexo" src="https://img.shields.io/badge/hexo-%3E%3D3.0-blue.svg">
@@ -25,7 +25,7 @@
 
 ---
 
-:ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. If you have any queries or advice during the process of using, Please contact me!  
+:ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. If you have any queries or advice during the process of using, Please contact me!  shenyu@hotmail.com
 
 <b>注：收藏本主题请点右上角Star，谢谢~</b>
 
@@ -67,9 +67,24 @@ let me know if you have any questions.
 menu:
   Home: /
   Archives: /archives
+  Categories: /categories
+  Tags: /tags
   Gallery: http://shenyu-vip.lofter.com
   Travel: /tags/旅行/
   About: /2019/about
+
+# Subtitle and Typing animation
+# https://github.com/mattboldt/typed.js
+subtitle:
+  enable: true
+  text: A clean and elegant theme
+  text2: It's perfect for your hexo blog
+  text3: Have fun!  #Supports up to three lines of text
+  startDelay: 0
+  typeSpeed: 200
+  loop: true
+  backSpeed: 100
+  showCursor: true
 
 # Favicon and sidebar logo
 favicon: /favicon.ico
@@ -88,6 +103,12 @@ progressBar: ture
 # Article Setting
 # (Use this to excerpt if article is too long：<!--more-->)
 excerpt_link: Read More...
+excerpt_all: false
+
+# Share
+share_enable: true
+# If you are not in China, maybe you prefer to set:false
+share_china: true
 # share text
 share_text: Share
 # search text
@@ -121,7 +142,12 @@ alipay: /images/alipay.jpg
 # qrcode image path
 weixin: /images/wechat.jpg
 
+# Copyright
+# type：0-close all； 1-only display in article which you have configured copyright: true； 2-all articles
+copyright_type: 2
+
 # Search
+# https://github.com/theme-next/hexo-generator-searchdb
 search: true
 
 # RSS
@@ -155,9 +181,6 @@ gitalk:
 github: 
   # (Set false if you don't need)
   url: https://github.com/Shen-Yu/hexo-theme-ayer
-
-# fancybox(Use for gallery, set false if you don't need)
-fancybox: true
 
 # pv&uv statistics
 busuanzi:
@@ -230,7 +253,7 @@ pageFooter: true
 ``` bash
   hexo new page categories
 ```
-Then paste following codes to file: _posts/categories/index.md
+Then paste following codes to file: /source/categories/index.md
 ``` md
 ---
 title: categories
@@ -241,19 +264,6 @@ layout: "categories"
 
 ### Tags
 Same as categories.
-
-### Post poster
-
-``` md
----
-title: Post name
-
-photos: [
-        ["img_url"],
-        ["img_url"]
-        ]
----
-```
 
 ### Gallery
 Need to write in the head of the markdown, this is not a good way to write, I hope to get a better way to write on github.
